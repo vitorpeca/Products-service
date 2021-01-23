@@ -1,0 +1,16 @@
+server:
+  port: ${SERVER_PORT:8080}
+
+spring:
+  application:
+    name: products
+  data:
+    mongodb:
+      host: ${MONGO_DB_CONNECTION_STRING:localhost}
+      port: ${MONGO_DB_PORT:27017}
+      database: ${MONGO_DB_DATABASE_NAME:Products}
+
+database:
+  zone:
+    collections:
+      default: Products
